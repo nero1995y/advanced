@@ -53,14 +53,14 @@ public class HelloTraceV2 {
                     traceId.getId(),
                     addSpace(COMPLETE_PREFIX,
                             traceId.getLevel()),
-                    status.getTraceId(),
+                    status.getMessage(),
                     resultTimeMs);
         }else  {
             log.info("[{}]{}{} time={}ms ex={}",
                     traceId.getId(),
                     addSpace(EX_PREFIX,
                             traceId.getLevel()),
-                    status.getTraceId(),
+                    status.getMessage(),
                     resultTimeMs,
                     e.toString());
         }
