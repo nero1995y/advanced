@@ -3,8 +3,6 @@ package aop.advanced.trace.logtrace;
 import aop.advanced.trace.TraceStatus;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
-
 class FieldLogTraceTest {
     FieldLogTrace trace = new FieldLogTrace();
 
@@ -23,4 +21,6 @@ class FieldLogTraceTest {
         trace.exception(status2, new IllegalStateException());
         trace.exception(status1, new IllegalStateException());
     }
+
+
 }
